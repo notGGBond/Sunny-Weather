@@ -3,6 +3,7 @@ package com.example.myapplication.ui.place
 import androidx.lifecycle.*
 import com.example.myapplication.logic.Repository
 import com.example.myapplication.logic.dao.PlaceDao
+
 import com.example.myapplication.logic.model.Place
 
 class PlaceViewModel : ViewModel() {
@@ -27,6 +28,7 @@ class PlaceViewModel : ViewModel() {
 
 
 }
+
 
 
 

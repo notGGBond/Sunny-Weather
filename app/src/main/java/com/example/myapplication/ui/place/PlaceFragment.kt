@@ -11,25 +11,22 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.core.widget.addTextChangedListener
-import androidx.lifecycle.liveData
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.coroutineScope
-import kotlin.coroutines.CoroutineContext
 import androidx.fragment.app.Fragment
+
+
 import androidx.lifecycle.Observer
 
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.R
-import com.example.myapplication.logic.network.SunnyWeatherNetwork
+
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.ui.MainActivity
 import com.example.myapplication.ui.weather.WeatherActivity
 
 
-class PlaceFragment:Fragment() {
+class PlaceFragment: Fragment() {
 
     val viewModel by lazy { ViewModelProviders.of(this).get(PlaceViewModel::class.java) }
 

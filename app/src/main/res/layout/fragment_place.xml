@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:id="@+id/actionBarLayout"
-        android:background="@color/design_default_color_on_primary"
+        android:background="@color/cardview_dark_background"
         >
 
         <EditText
