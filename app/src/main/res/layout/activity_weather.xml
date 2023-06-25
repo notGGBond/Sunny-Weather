@@ -41,7 +41,7 @@
         android:layout_gravity="start"
         android:clickable="true"
         android:focusable="true"
-        android:background="@color/material_dynamic_primary40">
+        android:background="#FFFFFF">
 
         <fragment
             android:id="@+id/placeFragment"

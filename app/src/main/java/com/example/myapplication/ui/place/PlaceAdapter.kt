@@ -33,11 +33,12 @@ class PlaceAdapter(private val fragment: PlaceFragment,private val placeList: Li
             val position = holder.adapterPosition
             val place = placeList[position]
 
+
             val activity = fragment.activity
 
             if (activity is WeatherActivity) {
-              val drawerLayout:DrawerLayout=activity.findViewById(R.id.drawerLayout)
-                drawerLayout.closeDrawers()
+                val drawerLayout:DrawerLayout?=activity?.findViewById(R.id.drawerLayout)
+               drawerLayout?.closeDrawers()
                 activity.viewModel.locationLng = place.location.lng
                 activity.viewModel.locationLat = place.location.lat
                 activity.viewModel.placeName = place.name
